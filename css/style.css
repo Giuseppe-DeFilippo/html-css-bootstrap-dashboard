@@ -6,3 +6,6 @@
     	.d-sm-none .d-md-block
     
     */
+    .min-width{
+        min-width: 110px;
+    }

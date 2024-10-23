@@ -41,16 +41,17 @@
     </header>
     
     <!--main-->
-    <main class="container-lg">
+    <main class="container-lg my-4">
         <section><h1>Nuovo Libro</h1></section>
+        <div class="my-4">
        
         <div class="row">
             <div class="col">
-                <h6>Nome autore</h6>
+                <label for="inputState" class="form-label ">Nome autore</label>
               <input type="text" class="form-control" placeholder="Inserisci nome autore" aria-label="Nome autore">
             </div>
             <div class="col">
-                <h6>Cognome autore</h6>
+                <label for="inputState" class="form-label">Cognome autore</label>
               <input type="text" class="form-control" placeholder="Cognome autore" aria-label="Last name">
             </div>
           </div>
@@ -59,15 +60,46 @@
             <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
             <section>Titolo versione italiana</section>
           </div>
-          <div>
-          <select class="form-select" aria-label="Default select example">
-            <option selected>Scegli il genere</option>
-            <option value="1">Romantico</option>
-            <option value="2">Horror</option>
-            <option value="3">Thriller</option>
-          </select>
+
+          
+          <div class="col row">
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <label for="inputState" class="form-label">Genere</label>
+                    <select id="inputState" class="form-select">
+                      <option selected>Scegli il genere</option>
+                      <option>Horror</option>
+                      <option>Commedia</option>
+                      <option>Thriller</option>
+                    </select>
+                  </div>
+                <div class="col-md-4 col-sm-12">
+                    <label for="inputState" class="form-label ">Anno di pubblicazione</label>
+                  <input type="date" class="form-control" placeholder="date" aria-label="date">
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <label for="inputState" class="form-label">Isbn#</label>
+                    <input type="text" class="form-control" placeholder="Inserisci il codice Isbn#" aria-label="Last name">
+                  </div>
+              </div>
+              <hr class="my-3">
+
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Note</label>
+                <textarea class="form-control" id="note" rows="3" placeholder="Inserisci eventuali note sul libro"></textarea>
+              </div>
+              
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="digital">
+                <label class="form-check-label" for="digital">
+                  Disponibile anche in digitale
+                </label>
+              </div>
+              <a href="index.html">
+              <button type="button" class="btn btn-primary">Aggiungi Libro </button></a>
+          
         </div>
-        
+    </div>
 
     </main>
 
